@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitsi Meet Demo</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        #jitsi-container {
+            width: 80vw;
+            height: 80vh;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        h3 {
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+<body>
+    <!-- Jitsi Meet container -->
+    <div id="jitsi-container">
+        <h3>Jitsi Meet iFrame</h3>
+    </div>
+
+    <!-- Jitsi Meet API script -->
+    <script src="https://meet.firora.io/external_api.js"></script>
+
+    <!-- Your custom script to initialize Jitsi Meet -->
+    <script src="jitsi-script.js"></script>
+</body>
+</html>
