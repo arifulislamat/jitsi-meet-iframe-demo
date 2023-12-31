@@ -17,7 +17,7 @@ This is a simple demo website showcasing the integration of Jitsi Meet video con
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/jitsi-meet-demo.git
+    git clone https://github.com/arifulislamat/jitsi-meet-demo.git
     ```
 
 2. Open the `index.html` file in your preferred text editor.
@@ -25,21 +25,22 @@ This is a simple demo website showcasing the integration of Jitsi Meet video con
 3. Locate the following section in the HTML file:
 
     ```html
-    <!-- Your custom script to initialize Jitsi Meet -->
-    <script src="your-script.js"></script>
+    <!-- Jitsi Meet API script -->
+    <script src="https://meet.firora.io/external_api.js"></script> 
     ```
-
-4. Open the `your-script.js` file and find the following line:
+4. Replace `'meet.firora.io'` with the domain of your Jitsi Meet instance.
+   
+5. Open the `jitsi-script.js` file and find the following line:
 
     ```javascript
-    const domain = 'your-jitsi-domain'; // Replace with your Jitsi Meet domain
+    const domain = 'jitsi-jitsi-domain'; // Replace with your Jitsi Meet domain
     ```
 
-5. Replace `'your-jitsi-domain'` with the domain of your Jitsi Meet instance.
+6. Replace `'jitsi-jitsi-domain'` with the domain of your Jitsi Meet instance.
 
-6. Save the changes.
+7. Save the changes.
 
-7. Open the `index.html` file in a web browser to test the Jitsi Meet integration.
+8. Open the `index.html` file in a web browser to test the Jitsi Meet integration.
 
 ## Customization
 
