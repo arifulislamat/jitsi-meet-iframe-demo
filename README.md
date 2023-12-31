@@ -42,6 +42,10 @@ This is a simple demo website showcasing the integration of Jitsi Meet video con
 
 8. Open the `index.html` file in a web browser to test the Jitsi Meet integration.
 
+## Screenshot
+<img width="1417" alt="image" src="https://github.com/arifulislamat/jitsi-meet-iframe-demo/assets/17812057/69c3a9dc-dc8a-4179-b008-19aa58b5c906">
+
+
 ## Customization
 
 Feel free to customize the styles and configurations in the HTML, CSS, and JavaScript files according to your requirements.
