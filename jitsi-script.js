@@ -9,6 +9,26 @@ const options = {
     },
     lang: 'en',
     parentNode: document.querySelector('#jitsi-container'),
+    configOverwrite: { 
+        // Add configOverwrite to enable close detection
+        enableClosePage: true,
+    },
+    interfaceConfigOverwrite: {
+        // Add interfaceConfigOverwrite to customize UI
+        TOOLBAR_BUTTONS: [
+            'microphone', 'camera', 'closedcaptions', 'desktop', 'fullscreen',
+            'fodeviceselection', 'hangup', 'profile', 'info', 'chat', 'recording',
+            'livestreaming', 'etherpad', 'sharedvideo', 'settings', 'raisehand',
+            'videoquality', 'filmstrip', 'invite', 'feedback', 'stats', 'shortcuts',
+            'tileview', 'videobackgroundblur', 'download', 'help', 'mute-everyone',
+        ],
+    },
 };
 
 const api = new JitsiMeetExternalAPI(domain, options);
+
+// Event listener for meeting end
+api.addListener('readyToClose', () => {
+    // Redirect to your desired page when the meeting is closed
+    window.location.href = 'https://arifulislamat.com';
+});
